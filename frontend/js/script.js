@@ -69,7 +69,7 @@ const handleLogin = (e) => {
     login.style.display = "none"
     chat.style.display = "flex"
 
-    webSocket = new WebSocket("ws://localhost:8080")
+    webSocket = new WebSocket("wss://chat-real-time-kt7d.onrender.com")
     webSocket.onmessage = processMessage
     console.log(user)
 }
